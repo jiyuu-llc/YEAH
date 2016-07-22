@@ -1,0 +1,25 @@
+{
+  "name": "yeah",
+  "private": true,
+  "scripts": {
+    "start": "meteor run"
+  },
+  "dependencies": {
+    "bootstrap": "^4.0.0-alpha.2",
+    "mantra-core": "^1.7.0",
+    "meteor-node-stubs": "~0.2.0",
+    "react-mounter": "^1.2.0",
+    "react-parallax": "^0.4.3"
+  },
+  "version": "1.0.0",
+  "description": "Website for the Young Entrepreneur's Association of Harrisburg",
+  "main": "index.js",
+  "keywords": [
+    "Young",
+    "Entrepreneur's",
+    "Association",
+    "Harrisburg"
+  ],
+  "author": "Alec Wantoch, Zachary Pelkey",
+  "license": "ISC"
+}
