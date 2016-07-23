@@ -1,0 +1,18 @@
+.member-contain {
+    width: 120px;
+    height: 140px;
+    text-align: center;
+    margin: 15px;
+    background: floralwhite;
+    color: black;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.member-name {
+    font-size: 10px !important;
+}
+
+.member-bio {
+    font-size: 16px;
+}

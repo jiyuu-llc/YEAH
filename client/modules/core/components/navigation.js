@@ -42,7 +42,7 @@ const Navigation = () => ({
                 Members
             </div>
             <div className="navbar-toggler navButton" onClick={this.contactClick.bind(this)}>
-                Contact
+                Contact Us
             </div>
         </nav>
            <div id="menuToggle" className="hidden-md-up navbar-toggler navButton" type="button"data-toggle="collapse" data-target="#exCollapsingNavbar">

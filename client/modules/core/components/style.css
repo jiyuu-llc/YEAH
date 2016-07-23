@@ -1,3 +1,19 @@
+@font-face {
+    font-family: Champagne;
+    src: url(/fonts/champagne.ttf);
+}
+    .champagne {
+        font-family: Champagne !important;
+    }
+
+@font-face {
+    font-family: ChampagneBold;
+    src: url(/fonts/champagneBold.ttf);
+}
+    .champagneBold {
+        font-family: ChampagneBold !important;
+    }
+
 body {
     background-image: url(/images/capitol.jpg);
     background-size:100vw 100vh;
@@ -7,6 +23,17 @@ body {
     color: white;
     font-size: 30px;
 }
+
+.yh-card {
+    width: 80%;
+    min-height: 300px;
+    max-width: 1000px;
+    display: block;
+    padding: 10px;
+    margin: 0 10% 0 10%;
+    background-color: rgba(0, 0, 0, 0.65);
+}
+
 
 #page-content{
     margin-top: 62px;
@@ -24,14 +51,11 @@ body {
     height: calc(100vh - 62px);
 }
 
-#home{
-    width: 80%;
-    min-height: 400px;
-    max-width: 1000px;
-    display: block;
-    background-color: rgba(0, 0, 0, 0.65);
-    padding: 10px;
-    margin: 0 10% 0 10%;
+#home {
+    margin: 0 10px 0 10px;
+    font-size: 47px;
+    color: white;
+    text-shadow: -4px 3px 3px rgba(150, 150, 150, 1);
 }
 
 #login{
@@ -54,16 +78,8 @@ body {
     padding: 10px;
 }
 
-.head-contain{
-    width: 120px;
-    height: 140px;
-    text-align: center;
-    border-radius: 50%;
-}
-
 .head-img{
-    padding: 3px;
-    background: white;
+    width: 100%;
 }
 
 blockquote {
@@ -80,6 +96,12 @@ blockquote {
         -moz-background-size: cover;
         -o-background-size: cover;
         background-size: cover;
+    }
+
+    blockquote {
+        font-size: 20px;
+        padding: 0;
+        margin: 0 !important;
     }
 }
 

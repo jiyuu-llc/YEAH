@@ -5,6 +5,8 @@
 }
 
 #nav-contain{
+    font-family: Champagne;
+    font-variant: small-caps;
     position: fixed;
     z-index: 200;
     top:0;

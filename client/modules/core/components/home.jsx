@@ -4,9 +4,7 @@ const Home = () => ({
 
     render() {
         return (
-            <div id="home">
-                <div className="yh-content">Home</div>
-            </div>
+            <div id="home" className="yh-content champagneBold">Young Entrepreneurs Association of Harrisburg</div>
         );
     }
 });

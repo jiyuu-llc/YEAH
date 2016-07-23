@@ -4,7 +4,7 @@ const Contact = () => ({
 
     render() {
         return (
-            <div id="home">
+            <div id="contact" className="yh-card">
                 <div className="yh-content">
                     Contact
                 </div>

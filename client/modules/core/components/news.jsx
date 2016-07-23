@@ -4,7 +4,7 @@ const News = () => ({
 
     render() {
         return (
-            <div id="home">
+            <div id="news" className="yh-card">
                 <div className="yh-content">News</div>
             </div>
         );
