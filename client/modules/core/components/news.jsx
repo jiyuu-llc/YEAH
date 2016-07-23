@@ -1,14 +1,14 @@
 import React from 'react';
 
-const Facilities = () => ({
+const News = () => ({
 
     render() {
         return (
             <div id="home">
-                <div className="yh-content">Facilities</div>
+                <div className="yh-content">News</div>
             </div>
         );
     }
 });
 
-export default Facilities;
+export default News;

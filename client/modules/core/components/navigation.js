@@ -13,15 +13,17 @@ const Navigation = () => ({
         FlowRouter.go("/");
     },
 
-    facilitiesClick(){
-        FlowRouter.go("/facilities");
+    newsClick(){
+        FlowRouter.go("/news");
     },
 
     membersClick(){
         FlowRouter.go("/members");
     },
 
-
+    contactClick(){
+        FlowRouter.go("/contact");
+    },
 
     render() {
         return (
@@ -30,17 +32,17 @@ const Navigation = () => ({
             <div className="navbar-toggler navButton" onClick={this.homeClick.bind(this)}>
                 Home
             </div>
+            <div className="navbar-toggler navButton" onClick={this.newsClick.bind(this)}>
+                News
+            </div>
             <div className="navbar-toggler navButton" onClick={this.missionClick.bind(this)}>
                 Our Mission
-            </div>
-            <div className="navbar-toggler navButton" onClick={this.facilitiesClick.bind(this)}>
-                Facilities
             </div>
             <div className="navbar-toggler navButton" onClick={this.membersClick.bind(this)}>
                 Members
             </div>
-            <div className="navbar-toggler navButton" type="button">
-                Join Us
+            <div className="navbar-toggler navButton" onClick={this.contactClick.bind(this)}>
+                Get in Touch
             </div>
         </nav>
            <div id="menuToggle" className="hidden-md-up navbar-toggler navButton" type="button"data-toggle="collapse" data-target="#exCollapsingNavbar">

@@ -5,8 +5,10 @@ import {mount} from 'react-mounter';
 import MainLayout from './components/main_layout';
 import Home from './components/home.jsx';
 import Mission from './components/mission.jsx';
-import Facilities from './components/facilities.jsx';
+import News from './components/news.jsx';
 import Members from './components/members.jsx';
+import Contact from './components/contact.jsx';
+import Login from './components/login.jsx';
 
 export default function (injectDeps, {FlowRouter}) {
     const MainLayoutCtx = injectDeps(MainLayout);
@@ -29,11 +31,11 @@ export default function (injectDeps, {FlowRouter}) {
         }
     });
 
-    FlowRouter.route('/facilities', {
-        name: 'facilities',
+    FlowRouter.route('/news', {
+        name: 'news',
         action() {
             mount(MainLayoutCtx, {
-                content: () => (<Facilities />)
+                content: () => (<News />)
             });
         }
     });
@@ -43,6 +45,24 @@ export default function (injectDeps, {FlowRouter}) {
         action() {
             mount(MainLayoutCtx, {
                 content: () => (<Members />)
+            });
+        }
+    });
+
+    FlowRouter.route('/contact', {
+        name: 'contact',
+        action() {
+            mount(MainLayoutCtx, {
+                content: () => (<Contact />)
+            });
+        }
+    });
+    
+    FlowRouter.route('/login', {
+        name: 'login',
+        action() {
+            mount(MainLayoutCtx, {
+                content: () => (<Login />)
             });
         }
     });

@@ -1,5 +1,5 @@
 body {
-    background-image: url(http://www.theconstantrambler.com/wp-content/uploads/2014/07/Harrisburg-State-Capitol-Building-029.jpg);
+    background-image: url(/images/capitol.jpg);
     background-size:100vw 100vh;
 }
 
@@ -34,6 +34,22 @@ body {
     margin: 0 10% 0 10%;
 }
 
+#login{
+    min-width: 300px;
+    width: 40%;
+    min-height: 300px;
+    max-width: 1000px;
+    display: block;
+    background-color: rgba(0, 0, 0, 0.65);
+    padding: 50px;
+    margin: 0 10% 0 10%;
+}
+
+.btn-center{
+    display: block !important;
+    margin: 0 auto !important;
+}
+
 #search-results{
     padding: 10px;
 }
@@ -50,9 +66,16 @@ body {
     background: white;
 }
 
+blockquote {
+    background: url(/images/bg-quote1.png) no-repeat;
+    font-style: italic;
+    margin: 30px !important;
+    padding: 30px 30px 30px 50px;
+}
+
 @media screen and (max-width: 768px){
     body{
-        background: url(http://www.theconstantrambler.com/wp-content/uploads/2014/07/Harrisburg-State-Capitol-Building-029.jpg) no-repeat center center fixed;
+        background: url(/images/capitol.jpg) no-repeat center center fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
