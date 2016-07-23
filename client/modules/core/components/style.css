@@ -23,6 +23,7 @@ body {
     color: white;
     font-size: 30px;
     text-align: center;
+    width: 100%;
 }
 
 .yh-title{
@@ -32,7 +33,7 @@ body {
 }
 
 .yh-card {
-    width: 80%;
+    min-width: 75%;
     min-height: 300px;
     max-width: 1000px;
     display: block;
@@ -100,6 +101,23 @@ blockquote {
     padding: 30px 30px 30px 50px;
 }
 
+#mobileMenu{
+    background: rgba(255, 255, 255, 0.87);
+    display: none;
+    z-index: 200;
+    width: 100%;
+    position: fixed;
+    height: 100%;
+    text-align: center;
+    font-size: 45px;
+    padding-top: 55px;
+}
+
+#mobileMenu > div > a{
+    color: black;
+    text-decoration: none;
+}
+
 @media screen and (max-width: 768px){
     body{
         background: url(/images/capitol.jpg) no-repeat center center fixed;
@@ -109,14 +127,19 @@ blockquote {
         background-size: cover;
     }
 
-    .yh-content {
-        text-align: left;
-    }
-
     blockquote {
         font-size: 20px;
-        padding: 0;
+        padding: 30px 5px 0 5px;
         margin: 0 !important;
+    }
+
+    .yh-card {
+        min-width: 80%;
+        text-align: center;
+    }
+
+    #home{
+        text-align: left;
     }
 }
 

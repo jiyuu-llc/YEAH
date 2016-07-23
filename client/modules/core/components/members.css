@@ -18,3 +18,10 @@
     display: block;
     cursor: hand;
 }
+
+
+@media screen and (max-width: 768px){
+    #members{
+        margin-top: 200px;
+    }
+}

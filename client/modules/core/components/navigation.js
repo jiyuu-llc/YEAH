@@ -25,6 +25,10 @@ const Navigation = () => ({
         FlowRouter.go("/contact");
     },
 
+    menuClick(){
+        $("#mobileMenu").toggle();
+    },
+
     render() {
         return (
        <div id="nav-contain">
@@ -45,7 +49,7 @@ const Navigation = () => ({
                 Contact Us
             </div>
         </nav>
-           <div id="menuToggle" className="hidden-md-up navbar-toggler navButton" type="button"data-toggle="collapse" data-target="#exCollapsingNavbar">
+           <div id="menuToggle" className="hidden-md-up navbar-toggler navButton" onClick={this.menuClick.bind(this)}>
                <i className="fa fa-bars" aria-hidden="true"/>
            </div>
     </div>
