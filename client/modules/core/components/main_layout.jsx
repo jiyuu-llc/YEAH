@@ -1,5 +1,6 @@
 import React from 'react';
-import Navigation from './navigation';
+import Navigation from './navigation.jsx';
+import MobileMenu from './mobileMenu'
 
 
 const Layout = ({ content }) => (
@@ -7,6 +8,7 @@ const Layout = ({ content }) => (
     <div>
         <Navigation />
         <div id="page-content">
+            <MobileMenu />
             {content()}
         </div>
     </div>

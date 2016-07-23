@@ -2,6 +2,10 @@ import React from 'react';
 
 const Navigation = ({navItems}) => ({
 
+    menuClick(){
+      $("#mobileMenu").toggle();
+    },
+
     changeRoute(name){
       FlowRouter.go(name);
     },
@@ -47,7 +51,7 @@ const Navigation = ({navItems}) => ({
             <nav className="navbar navbar-yeah hidden-sm-down">
               {this.renderNav()}
             </nav>
-               <div id="menuToggle" className="hidden-md-up navbar-toggler navButton" type="button"data-toggle="collapse" data-target="#exCollapsingNavbar">
+               <div id="menuToggle" className="hidden-md-up navbar-toggler navButton" onClick={this.menuClick.bind(this)}>
                    <i className="fa fa-bars" aria-hidden="true"/>
                </div>
             </div>
