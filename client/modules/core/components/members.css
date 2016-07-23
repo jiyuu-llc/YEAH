@@ -1,6 +1,6 @@
 .member-contain {
-    width: 120px;
-    height: 140px;
+    width: 140px;
+    height: 180px;
     text-align: center;
     margin: 15px;
     background: floralwhite;
@@ -10,9 +10,11 @@
 }
 
 .member-name {
-    font-size: 10px !important;
+    font-size: 16px !important;
 }
 
-.member-bio {
-    font-size: 16px;
+.email {
+    font-size: 10px !important;
+    display: block;
+    cursor: hand;
 }

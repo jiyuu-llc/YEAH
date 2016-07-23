@@ -6,7 +6,14 @@ const Contact = () => ({
         return (
             <div id="contact" className="yh-card">
                 <div className="yh-content">
-                    Contact
+                    <div className="row">
+                        <div className="col-xs-12 col-sm-6">
+                            Contact Us Directly
+                        </div>
+                        <div className="col-xs-12 col-sm-6">
+                            Become a Member
+                        </div>
+                    </div>
                 </div>
             </div>
         );

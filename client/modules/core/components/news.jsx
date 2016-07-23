@@ -5,7 +5,12 @@ const News = () => ({
     render() {
         return (
             <div id="news" className="yh-card">
-                <div className="yh-content">News</div>
+                <div className="yh-title">
+                    News
+                </div>
+                <div className="yh-content">
+                        <div className="news-item"></div>
+                </div>
             </div>
         );
     }
