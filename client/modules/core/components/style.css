@@ -139,6 +139,7 @@ blockquote {
     }
 
     #home{
+        font-size: 50px;
         text-align: left;
     }
 }
