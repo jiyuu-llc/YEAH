@@ -1,0 +1,51 @@
+#slider{
+    background:blue;
+    height:100px;
+    width:500px;
+    position:relative;
+    left:-520px;
+}
+
+.enter-left{
+    left: 0;
+}
+
+.exit-left{
+    left:-520px !important;
+}
+
+.enter-right{
+    right: 0;
+}
+
+.exit-right{
+    right:-520px !important;
+}
+
+.intial-right{
+    right: -520px;
+}
+
+.intial-left{
+   left: -520px;
+}
+
+
+
+.animate-right{
+    -webkit-transition: right 0.3s ease-out;  /* Chrome 1-25, Safari 3.2+ */
+    -moz-transition: right 0.3s ease-out;  /* Firefox 4-15 */
+    -o-transition: right 0.3s ease-out;  /* Opera 10.50–12.00 */
+    transition: right 0.3s ease-out;  /* Chrome 26, Firefox 16+, IE 10+, Opera 12.10+ */
+}
+
+
+.animate-left{
+
+
+    
+    -webkit-transition: left 0.3s ease-out;  /* Chrome 1-25, Safari 3.2+ */
+    -moz-transition: left 0.3s ease-out;  /* Firefox 4-15 */
+    -o-transition: left 0.3s ease-out;  /* Opera 10.50–12.00 */
+    transition: left 0.3s ease-out;  /* Chrome 26, Firefox 16+, IE 10+, Opera 12.10+ */
+}
