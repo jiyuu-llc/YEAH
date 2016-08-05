@@ -64,6 +64,7 @@ body {
     font-size: 60px;
     color: white;
     text-shadow: -4px 3px 3px rgba(150, 150, 150, 1);
+    display: none;
 }
 
 #login{
@@ -141,6 +142,7 @@ blockquote {
     #home{
         font-size: 50px;
         text-align: left;
+        display:none;
     }
 }
 
