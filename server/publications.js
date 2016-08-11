@@ -5,3 +5,7 @@ import {Nav} from '/lib/collections';
 Meteor.publish('nav', function() {
     return Nav.findOne({});
 });
+
+Meteor.publish('users.single', function() {
+    return Meteor.users.find({});
+});

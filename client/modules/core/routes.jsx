@@ -9,6 +9,8 @@ import News from './components/news.jsx';
 import Members from './components/members.jsx';
 import Contact from './components/contact.jsx';
 import Login from './components/login.jsx';
+import Admin from './components/admin.jsx';
+import Register from './components/register.jsx';
 
 export default function (injectDeps, {FlowRouter}) {
     const MainLayoutCtx = injectDeps(MainLayout);
@@ -64,6 +66,21 @@ export default function (injectDeps, {FlowRouter}) {
             mount(MainLayoutCtx, {
                 content: () => (<Login />)
             });
+        }
+    });
+
+    FlowRouter.route('/register', {
+        name: 'register',
+        action() {
+            mount(Register);
+        }
+    });
+
+
+    FlowRouter.route('/admin', {
+        name: 'admin',
+        action() {
+            mount(Admin);
         }
     });
 }

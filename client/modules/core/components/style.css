@@ -19,6 +19,12 @@ body {
     background-size:100vw 100vh;
 }
 
+.aligner-c {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .yh-content{
     color: white;
     font-size: 30px;

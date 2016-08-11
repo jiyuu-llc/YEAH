@@ -1,4 +1,4 @@
-/*import React from 'react';
+/*fimport React from 'react';
 import { composeWithTracker } from 'react-komposer';
 import {Nav} from '/lib/collections';
 import Navigation from '../components/navigation.jsx';
