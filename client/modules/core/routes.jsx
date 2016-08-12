@@ -59,7 +59,7 @@ export default function (injectDeps, {FlowRouter}) {
             });
         }
     });
-    
+
     FlowRouter.route('/login', {
         name: 'login',
         action() {
@@ -81,6 +81,7 @@ export default function (injectDeps, {FlowRouter}) {
         name: 'admin',
         action() {
             mount(Admin);
+            Meteor.call('toggleEditor', true);
         }
     });
 }

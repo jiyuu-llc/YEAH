@@ -1,7 +1,7 @@
 import React from 'react';
 import { composeWithTracker } from 'mantra-core';
 import {Admin} from '/lib/collections';
-import Navigation from '../components/navigation.jsx';
+import EditorState from '../components/editor.jsx';
 
 const composer = (props, onData) => {
     if (Meteor.subscribe('admin').ready()){
@@ -19,4 +19,4 @@ const composer = (props, onData) => {
     }
 };
 
-export default composeWithTracker(composer, Navigation)(Navigation);
+export default composeWithTracker(composer, EditorState)(EditorState);

@@ -1,9 +1,13 @@
 import {Meteor} from 'meteor/meteor';
 import {check} from 'meteor/check';
-import {Nav} from '/lib/collections';
+import {Nav, Admin} from '/lib/collections';
 
 Meteor.publish('nav', function() {
-    return Nav.findOne({});
+    return Nav.find({});
+});
+
+Meteor.publish('admin', function() {
+    return Admin.find({userId: this.userId});
 });
 
 Meteor.publish('users.single', function() {
